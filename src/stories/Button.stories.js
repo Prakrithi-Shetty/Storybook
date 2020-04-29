@@ -14,8 +14,19 @@ export const Text = () => <Button >Hello Button</Button>;
 
 export const  Primary = () => (
   <Button
+  
     onClick={action('click')}
     label="Primary Button"
+    buttonType="primary"
+  />
+);
+
+export const  secondary = () => (
+  <Button
+  
+    onClick={action('click')}
+    label="Secondary Button"
+    buttonType="secondary"
   />
 );
 
@@ -24,6 +35,7 @@ export const outline=()=>(
 <Button
     label="Ouline Button"
     onClick={action('click')}
+    
     style={{ background: 'transparent', border: '3px solid #fecd43' }}
   />)
 
@@ -35,7 +47,8 @@ export const outline=()=>(
   />)
   
   export const disabled =()=>(
-    <Button disabled
+    <Button 
+    disabled
     label="Disabled Button"
     onClick={action('click')}
     style={{ background: 'gray' , border: 'gray', cursor: 'not-allowed' }}
