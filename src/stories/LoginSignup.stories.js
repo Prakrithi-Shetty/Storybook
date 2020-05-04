@@ -1,10 +1,11 @@
 import React, { Component } from "react";
 import { Router, Route, Switch } from "react-router-dom";
 
-import loginsignup from "../Pruvaa/src/views/LogInSignUp/LogInSignUp";
-import Login from "../Pruvaa/src/views/LogInSignUp/Login/Login";
-import Header from "../Pruvaa/src/layout/Header";
-import history from "../Pruvaa/src/constants/history/history";
+
+import LogIn from "../Components/Login/Login";
+import Header from "../Components/Header/Header";
+import history from "../Components/History/History"
+import LoginSignUp from "../Components/LoginSignUp/LoginSignUp";
 
 export default {
   title: 'LoginSignup'
@@ -15,10 +16,20 @@ export default {
 
 
 
-export const  LoginToYourAccount = () => (
+export const  Headercomp = () => (
     <Router history={history}>
         
         <Header/>
+      </Router>
+
+ 
+    
+);
+
+export const  MainLogin = () => (
+    <Router history={history}>
+        
+        <LoginSignUp/>
       </Router>
 
  

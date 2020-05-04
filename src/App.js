@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import LoginSignUp from "./Components/LoginSignUp/LoginSignUp";
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import { theme } from "./Components/Theme/Theme"
 
 
 
@@ -6,9 +9,11 @@ import React, { Component } from 'react'
 export default class componentName extends Component {
   render() {
     return (
-      <div>
       
-      </div>
+      <MuiThemeProvider theme={theme}>
+  <LoginSignUp/>
+    </MuiThemeProvider>
+      
     )
   }
 }
