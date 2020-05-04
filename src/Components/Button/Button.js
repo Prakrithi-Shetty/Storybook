@@ -1,8 +1,11 @@
 import React from 'react';
 import './Button.css';
-import cx from "classnames";
+
+ import cx from "classnames";
 const Button =(props) => {
-const {buttonType} = props;
+// const {buttonType} = props;
+const {buttonType="primary"} = props;
+const {variant="contained"}= props;
 
   return (<button 
     {...props}

@@ -18,6 +18,7 @@ export const  Primary = () => (
     onClick={action('click')}
     label="Primary Button"
     buttonType="primary"
+    variant="contained"
   />
 );
 
@@ -35,7 +36,7 @@ export const outline=()=>(
 <Button
     label="Ouline Button"
     onClick={action('click')}
-    
+   
     style={{ background: 'transparent', border: '3px solid #fecd43' }}
   />)
 
