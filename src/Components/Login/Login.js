@@ -6,12 +6,7 @@ import  {Style } from "../../Components/Login/Login.style";
 
 
 class Login extends Component {
-    state = {
-      Email: "",
-      Password: "",
-      RememberMe: false,
-      IsSubmitted: false,
-    };
+    
 
     handleSubmit=()=>{
 
@@ -21,12 +16,12 @@ class Login extends Component {
 
     render() {
         const { classes } = this.props;
-        const { Email, Password } = this.state;
+       
         return (
             
           <div className={classes.formFieldCover}>
-            <CustomInput label="Email" value={Email} name="Email" handleChange={this.handleInputChange} type="email" />
-            <CustomInput label="Password" value={Password} name="Password" handleChange={this.handleInputChange} type="password" />
+            <CustomInput label="Email"  name="Email"  type="email" />
+            <CustomInput label="Password"  name="Password" type="password" />
             <FormControlLabel
               classes={{
                 root: classes.checkLabelRoot,
