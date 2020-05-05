@@ -2,7 +2,7 @@
 import React, { Component } from "react";
 import { withStyles, Grid, ExpansionPanel, ExpansionPanelSummary, ExpansionPanelDetails, Typography } from "@material-ui/core";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import { theme } from "../Theme/Theme"
+
 import  Login from "../../Components/Login/Login";
 import {style} from "../../Components/LoginSignUp/LoginSignUp.style";
 import Signup from "../SignUp/SignUp"
@@ -21,7 +21,7 @@ class LogInSignUp extends Component {
       const { classes } = this.props;
       const { Expanded } = this.state;
       return (
-        <MuiThemeProvider theme={theme}>
+    
         
         <>
          
@@ -52,7 +52,7 @@ class LogInSignUp extends Component {
            
           </div>
         </>
-        </MuiThemeProvider>
+     
       );
     }
   }
