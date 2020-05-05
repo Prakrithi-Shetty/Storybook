@@ -5,8 +5,8 @@ import { Router, Route, Switch } from "react-router-dom";
 import LogIn from "../Components/Login/Login";
 import Header from "../Components/Header/Header";
 import history from "../Components/History/History"
-import LoginSignUp from "../Components/LoginSignUp/LoginSignUp";
-import Login from "../Components/Login/Login"
+import Login from "../Components/LoginSignUp/LoginL";
+import Signup from "../Components/LoginSignUp/LoginS";
 
 export default {
   title: 'LoginSignup'
@@ -27,12 +27,22 @@ export const  Headercomp = () => (
     
 );
 
-export const  MainLogin = () => (
+export const  MailLogin = () => (
     <Router history={history}>
         
-       <Login/>
+        <Login/>
       </Router>
 
  
     
+);
+
+export const  MainSignup = () => (
+  <Router history={history}>
+      
+      <Signup/>
+    </Router>
+
+
+  
 );
