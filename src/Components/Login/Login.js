@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { withStyles, FormControlLabel, Checkbox, Button } from "@material-ui/core";
 import { Link } from "react-router-dom";
-import CustomInput  from "../CustomInput/CustomInput";
+import CustomInput  from "../Custominput/CustomInput";
 import  {Style } from "../../Components/Login/Login.style"; 
 
 

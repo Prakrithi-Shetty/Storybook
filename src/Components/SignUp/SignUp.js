@@ -5,7 +5,7 @@ import MuiPhoneNumber from "material-ui-phone-number";
 
 
 
-import CustomInput, { InputStyle }   from "../CustomInput/CustomInput";
+import CustomInput, { InputStyle }   from "../Custominput/CustomInput"
 import { Style } from  "./SignUp.style";
 
 class SignUp extends Component {
