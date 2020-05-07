@@ -17,4 +17,12 @@ export const Style = (theme) => ({
   label: {
     paddingTop: 5,
   },
+  icon:{
+    color: theme.palette.primary.main,
+    "icon:hover": {
+      color: `1px solid ${theme.palette.secondary.main}`,
+    }
+  },
+ 
+
 });

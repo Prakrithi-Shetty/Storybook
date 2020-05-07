@@ -73,4 +73,9 @@ export const Style = (theme) => ({
     padding: "20px 20px 0px",
     borderBottom: "1px solid #CCD4D8",
   },
+
+  icon:{
+    color:theme.palette.secondary.dark,
+    marginRight: "12px"
+  }
 });

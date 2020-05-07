@@ -7,11 +7,11 @@ import Header from "../Components/Header/Header";
 import history from "../Components/History/History"
 import Login from "../Components/LoginSignUp/LoginL";
 import Signup from "../Components/LoginSignUp/LoginS";
-import Timer from "../Components/Bidtimer/Mainbidtimer"
-import Live from "../Components/Dashboard/MainContent/LiveMarket/LiveMarket";
+import Timer from "../Components/Bidtimer/Bidtimer"
+
 import Chip from "../Components/CustomChips/CustomChips";
-import Maincard from "../Components/CustomCard/Maincustomcard";
-import { FILTERS, HOTELS } from "../Components/Data/Data";
+import Card from "../Components/CustomCard/CustomCard";
+
 
 
 import Leftbar from "../Components/Dashboard/LeftSideBar/LeftSideBar";
@@ -77,16 +77,7 @@ export const  timer=() => (
   
 );
 
-export const  Livemarket=() => (
 
-  
-  <Router history={history}>
-    <Live/>
-    </Router>
-
-
-  
-);
 
 
 export const  Customchip=() => (
@@ -104,7 +95,7 @@ export const  Customcard=() => (
 
   
   <Router history={history}>
-    <Maincard/>
+    <Card/>
 
 </Router>
   

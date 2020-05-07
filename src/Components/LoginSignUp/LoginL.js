@@ -4,7 +4,7 @@ import { withStyles, Grid, ExpansionPanel, ExpansionPanelSummary, ExpansionPanel
 import { MuiThemeProvider } from "@material-ui/core/styles";
 
 import  Login from "../../Components/Login/Login";
-import {style} from "../../Components/LoginSignUp/LoginSignUp.style";
+import {Style} from "../../Components/LoginSignUp/LoginSignUp.style";
 import Signup from "../SignUp/SignUp"
 
 class LogInSignUp extends Component {
@@ -21,17 +21,8 @@ class LogInSignUp extends Component {
       const { classes } = this.props;
       const { Expanded } = this.state;
       return (
-    
-        
-        <>
-         
-          <div className={classes.container}>
-         
-              
-            
-            <Grid container direction="row" justify="center" alignItems="center">
-              <Grid item xs={3}>
-                <ExpansionPanel className={classes.expansion} expanded={Expanded === "panel1"} onChange={this.handleChange("panel1")}>
+     <div className={classes.container}>
+                         <ExpansionPanel className={classes.expansion} expanded={Expanded === "panel1"} onChange={this.handleChange("panel1")}>
                   <ExpansionPanelSummary aria-controls="panel1a-content" id="panel1a-header" className={classes.content}>
                     <Typography className={classes.heading}>Log in to your account</Typography>
                   </ExpansionPanelSummary>
@@ -39,15 +30,10 @@ class LogInSignUp extends Component {
                     <Login />
                   </ExpansionPanelDetails>
                 </ExpansionPanel>
-                
-              </Grid>
-            </Grid>
-           
+               
           </div>
-        </>
-     
-      );
+          );
     }
   }
   
-  export default withStyles(style)(LogInSignUp);
+  export default withStyles(Style)(LogInSignUp);

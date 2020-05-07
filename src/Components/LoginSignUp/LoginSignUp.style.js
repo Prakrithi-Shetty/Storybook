@@ -26,8 +26,8 @@ export const Style = (theme) => ({
     fontSize: 25,
     color: theme.palette.secondary.light,
     textAlign: "center",
-    width: "22%",
     margin: "0 auto",
     marginBottom: 20,
   },
 });
+ 

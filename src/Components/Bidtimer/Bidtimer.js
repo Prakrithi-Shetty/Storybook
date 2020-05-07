@@ -33,7 +33,7 @@ class BidTimer extends Component {
 
   componentDidMount() {
     setInterval(() => {
-      this.setState({ timeLeft: calculateTimeLeft(this.props.closingDate) });
+      this.setState({ timeLeft: calculateTimeLeft("2020-07-05") });
     }, 1000);
   }
 
