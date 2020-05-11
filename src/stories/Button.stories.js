@@ -27,7 +27,7 @@ export const  secondary = () => (
   
     onClick={action('click')}
     label="Secondary Button"
-    buttonType="secondary"
+    buttonType="primary"
   />
 );
 

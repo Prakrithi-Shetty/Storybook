@@ -8,13 +8,18 @@ import history from "../Components/History/History"
 import Login from "../Components/LoginSignUp/LoginL";
 import Signup from "../Components/LoginSignUp/LoginS";
 import Timer from "../Components/Bidtimer/Bidtimer"
-
 import Chip from "../Components/CustomChips/CustomChips";
 import Card from "../Components/CustomCard/CustomCard";
+import Input from "../Components/Custominput/CustomInput";
+import Citycard from "../Components/CustomCityCard/CustomCityCard";
+import CustomInfo from "../Components/CustomInfoCard/CustomInfoCard";
 
 
 
 import Leftbar from "../Components/Dashboard/LeftSideBar/LeftSideBar";
+import FAQCard from "../Components/FAQCard/FAQCard";
+import CategoryButton from "../Components/CategoryButton/CategoryButton";
+import CategoryModal from "../Components/CategoryModal/CategoryModal"
 
 export default {
   title: 'Pruvaa'
@@ -96,6 +101,67 @@ export const  Customcard=() => (
   
   <Router history={history}>
     <Card/>
+
+</Router>
+  
+);
+
+export const  Custominput=() => (
+
+  
+  <Router history={history}>
+    <Input/>
+
+</Router>
+  
+);
+
+export const  Customcitycard=() => (
+
+  
+  <Router history={history}>
+    <Citycard/>
+
+</Router>
+  
+);
+
+export const  Custominfo=() => (
+
+  
+  <Router history={history}>
+    <CustomInfo/>
+
+</Router>
+  
+);
+
+
+export const  Faq=() => (
+
+  
+  <Router history={history}>
+    <FAQCard/>
+
+</Router>
+  
+);
+
+export const  Categorybutton=() => (
+
+  
+  <Router history={history}>
+    <CategoryButton/>
+
+</Router>
+  
+);
+
+export const  CategoryModell=() => (
+
+  
+  <Router history={history}>
+    <CategoryModal/>
 
 </Router>
   

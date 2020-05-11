@@ -7,7 +7,7 @@ import RoomIcon from '@material-ui/icons/Room';
 import DateRangeIcon from '@material-ui/icons/DateRange';
 import PersonIcon from '@material-ui/icons/Person';
 import LocationCityIcon from '@material-ui/icons/LocationCity';
-import hotel from "../../Components/assets/images/hotels.jpg"
+import hotel from "./hotels.jpg"
 
 const CustomCard = ({ classes }) => {
   return (
