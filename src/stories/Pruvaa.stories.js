@@ -20,6 +20,7 @@ import Leftbar from "../Components/Dashboard/LeftSideBar/LeftSideBar";
 import FAQCard from "../Components/FAQCard/FAQCard";
 import CategoryButton from "../Components/CategoryButton/CategoryButton";
 import CategoryModal from "../Components/CategoryModal/CategoryModal"
+import Faqopen from "../Components/FAQs/FAQs"
 
 export default {
   title: 'Pruvaa'
@@ -137,7 +138,7 @@ export const  Custominfo=() => (
 );
 
 
-export const  Faq=() => (
+export const  FAQ=() => (
 
   
   <Router history={history}>
@@ -157,11 +158,21 @@ export const  Categorybutton=() => (
   
 );
 
-export const  CategoryModell=() => (
+export const  CategoryModel=() => (
 
   
   <Router history={history}>
     <CategoryModal/>
+
+</Router>
+  
+);
+
+export const  FAQs=() => (
+
+  
+  <Router history={history}>
+    <Faqopen/>
 
 </Router>
   

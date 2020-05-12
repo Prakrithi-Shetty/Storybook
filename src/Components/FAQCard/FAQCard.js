@@ -8,19 +8,17 @@ import CategoryModal from "../CategoryModal/CategoryModal";
 
 
 
-const FAQCard = ({ classes, title, description, handleModalOpen, id }) => {
+const FAQCard = ({ classes,handleModalOpen}) => {
   
   return (
-    <Paper elevation={0} className={classes.paper} onClick={() => handleModalOpen(id)}>
+    <Paper elevation={0} className={classes.paper} onClick={() => handleModalOpen()}>
       <Typography className={classes.title}>
         {"Title One"}
         <ChevronRightIcon className={classes.icon}>chevron_right</ChevronRightIcon>
       </Typography>
      
   <Typography  id={1} className={classes.description}>{"Lorem ipsum dolor sit amet, utamur placerat per eu, his mundi labitur id. Eam dicunt molestiae appellantur ex, eu vis modo semper appellantur, ei vim mentitum inimicus omittantur. Summo minim efficiantur in vim, eam et impedit repudiare. Mel ut errem vidisse ornatus, id quo case viderer."}</Typography>
-  <Modal open={true}  className={classes.modal} hideBackdrop={true}>
-                      <CategoryModal  />
-                    </Modal>
+ 
     
     </Paper>
     
