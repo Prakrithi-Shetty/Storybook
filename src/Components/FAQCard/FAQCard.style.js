@@ -26,10 +26,10 @@ export const Style = (theme) => ({
     lineHeight: 1.2,
     marginTop: 6,
   },
-
+  
   icon:{
     color:theme.palette.secondary.dark,
     fontSize:18,
     marginBottom:"-5px"
-  }
+  },
 });

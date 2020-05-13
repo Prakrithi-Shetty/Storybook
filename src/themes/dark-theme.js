@@ -24,7 +24,7 @@ export const overridings = {
         main: "#FF8E45",
         light: "#FFFFFF",
         dark: "#37B8FC",
-        //contrastText: "#707070",
+        contrastText: "#7F91A1",
       }
   },
 

@@ -9,18 +9,20 @@ import Login from "../Components/LoginSignUp/LoginL";
 import Signup from "../Components/LoginSignUp/LoginS";
 import Timer from "../Components/Bidtimer/Bidtimer"
 import Chip from "../Components/CustomChips/CustomChips";
-import Card from "../Components/CustomCard/CustomCard";
+import Card from "../Components/CustomCard/CustomCard"
 import Input from "../Components/Custominput/CustomInput";
 import Citycard from "../Components/CustomCityCard/CustomCityCard";
 import CustomInfo from "../Components/CustomInfoCard/CustomInfoCard";
-
+import ContactDetails from "../Components/ContactDetails/ContactDetails";
 
 
 import Leftbar from "../Components/Dashboard/LeftSideBar/LeftSideBar";
-import FAQCard from "../Components/FAQCard/FAQCard";
+import FAQCard from "../Components/FAQCard/FAQCard"
 import CategoryButton from "../Components/CategoryButton/CategoryButton";
 import CategoryModal from "../Components/CategoryModal/CategoryModal"
-import Faqopen from "../Components/FAQs/FAQs"
+import Faqopen from "../Components/FAQMerge/FAQMerge";
+import CustomSlider from "../Components/CustomSlider/CustomSlider"
+import CustomSelect from "../Components/CustomSelect/CustomSelect"
 
 export default {
   title: 'Pruvaa'
@@ -138,7 +140,7 @@ export const  Custominfo=() => (
 );
 
 
-export const  FAQ=() => (
+export const  FAQcard=() => (
 
   
   <Router history={history}>
@@ -168,11 +170,41 @@ export const  CategoryModel=() => (
   
 );
 
-export const  FAQs=() => (
+export const  FAQmerge=() => (
 
   
   <Router history={history}>
     <Faqopen/>
+
+</Router>
+  
+);
+
+export const  Slider=() => (
+
+  
+  <Router history={history}>
+    <CustomSlider/>
+
+</Router>
+  
+);
+
+export const  Select=() => (
+
+  
+  <Router history={history}>
+    <CustomSelect />
+
+</Router>
+  
+);
+
+export const  Contact=() => (
+
+  
+  <Router history={history}>
+    <ContactDetails />
 
 </Router>
   

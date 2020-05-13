@@ -6,7 +6,14 @@ import LocationCityIcon from '@material-ui/icons/LocationCity';
 
 const CustomChips = ({ classes, icon, label, FilterSelected, handleFilter, val }) => {
   console.log(val);
-  return <Chip classes={{ root: classes.root, label: classes.label }} icon={ <Icon><LocationCityIcon></LocationCityIcon></Icon>} label={"Hotels"} />;
+  return <Chip classes={{ root: classes.root, label: classes.label }} icon={<Icon><LocationCityIcon/></Icon>} label={label} />;
 };
+
+
+CustomChips.defaultProps={
+  label:"Hotels",
+  
+
+  }
 
 export default withStyles(Style)(CustomChips);

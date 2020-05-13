@@ -33,15 +33,21 @@ const Style = (theme) => ({
   },
 });
 
-const CustomInput = ({ classes }) => {
+const CustomInput = ({ classes,label }) => {
   return (
     <FormControl className={classes.formField}>
       <InputLabel shrink htmlFor="name-input">
-     {"Email"}
+       {label}
       </InputLabel>
       <InputStyle defaultValue="" id="name-input" value={""}  name={""} type={""} />
     </FormControl>
   );
 };
+
+
+CustomInput.defaultProps={
+  label:"Email"
+}
+
 
 export default withStyles(Style)(CustomInput);
