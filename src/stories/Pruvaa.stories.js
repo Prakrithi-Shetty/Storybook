@@ -172,9 +172,9 @@ export const  CategoryModel=() => (
 
 export const  FAQmerge=() => (
 
-  
+ 
   <Router history={history}>
-    <Faqopen/>
+    <Faqopen  />
 
 </Router>
   
