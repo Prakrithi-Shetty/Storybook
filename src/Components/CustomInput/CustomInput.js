@@ -33,20 +33,27 @@ const Style = (theme) => ({
   },
 });
 
-const CustomInput = ({ classes,label }) => {
+const CustomInput = ({ classes,label ,value,name,handleChange,type,textArea}) => {
   return (
     <FormControl className={classes.formField}>
       <InputLabel shrink htmlFor="name-input">
        {label}
       </InputLabel>
-      <InputStyle defaultValue="" id="name-input" value={""}  name={""} type={""} />
+      <InputStyle defaultValue="" id="name-input"  onChange={handleChange} name={name} type={type} multiline={textArea} rows="5" />
     </FormControl>
   );
 };
 
 
 CustomInput.defaultProps={
-  label:"Email"
+  label:"Password",
+  type:"password",
+  name:"Password",
+  value:"",
+  handleChange:function(){console.log("Password")},
+  textArea:false,
+
+
 }
 
 

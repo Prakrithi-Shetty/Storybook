@@ -31,15 +31,19 @@ class BidTimer extends Component {
     timeLeft: calculateTimeLeft(),
   };
 
-  componentDidMount() {
+  static defaultProps={
+    date:"2020-07-05",
+  }
+
+  componentDidMount(props) {
     setInterval(() => {
-      this.setState({ timeLeft: calculateTimeLeft("2020-07-05") });
+      this.setState({ timeLeft: calculateTimeLeft(this.props.date) });
     }, 1000);
   }
 
   render() {
     const timerComponents = [];
-    const { classes } = this.props;
+    const { classes ,date} = this.props;
 
     Object.keys(this.state.timeLeft).forEach((interval) => {
       if (!this.state.timeLeft[interval]) {
@@ -53,6 +57,7 @@ class BidTimer extends Component {
     });
     return (
       <>
+      
         {timerComponents.length ? (
           <div>
             <Typography className={classes.timer}>

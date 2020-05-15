@@ -22,7 +22,7 @@ CategoryButton.propTypes = {
 };
 
 CategoryButton.defaultProps={
-  label:"Category 1"
+  label:"Category 1",
 }
 
 export default withStyles(Style)(CategoryButton);

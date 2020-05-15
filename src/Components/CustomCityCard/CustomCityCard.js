@@ -2,7 +2,7 @@ import React from "react";
 import { withStyles, Typography, Card } from "@material-ui/core";
 import PropTypes from "prop-types";
 import { Style } from "./CustomCityCard.style";
-import bgImage from "./bali.jpg";
+import bgImage from "../../Components/assets/images/bali.jpg";
 
 const CustomCityCard = ({ classes, bgImage, title, subTitle  }) => {
   return (
